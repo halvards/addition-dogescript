@@ -1,0 +1,11 @@
+{
+  "name": "addition-dogescript",
+  "private": true,
+  "version": "1.0.0",
+  "description": "wow addition such set",
+  "author": "Halvard Skogsrud",
+  "license": "MIT",
+  "dependencies": {
+    "dogescript": "2.3.0"
+  }
+}

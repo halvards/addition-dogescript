@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -ef -o pipefail
+
+if [[ -z "$(which node 2> /dev/null)" ]]; then
+  echo 'Error: Please install NodeJS'
+  echo '       If you use a Mac and Homebrew, run "brew update && brew install node"'
+  echo '       Otherwise please follow the instructions here: https://nodejs.org/en/'
+  exit 1
+fi
+
+if [[ -z "$1" ]]; then
+  echo 'Usage: ./go integer1 [integer2] [integer3] [...]'
+  exit 2
+fi
+
+node <(dogescript add.djs) $@
