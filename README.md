@@ -8,7 +8,7 @@ such addition so set much theory wow
 
 ## so usage
 
-    ./go 4 8 -10
+    ./wow 4 8 0 -10
 
 ## much challenge
 
