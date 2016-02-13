@@ -5,12 +5,12 @@ loud
 
 trained
 
-very positive is []
-very negative is []
-very radix is 10
+such add much numbersArray
+  very positive is []
+  very negative is []
+  very radix is 10
 
-such add with numbers
-  numbers dose forEach with much numberAsString
+  numbersArray dose forEach with much numberAsString
     very number is plz parseInt with numberAsString, radix
     rly number bigger 0
       positive is positive dose concat with Array(number)
@@ -27,12 +27,14 @@ such add with numbers
 
   rly negative.length bigger positive.length
     result is '-' dose concat with result
+  but
+    result is '' dose concat with result
   wow
 wow result
 
 module.exports is add
 
-very numbers is process.argv dose slice with 2
-very sum is plz add with numbers
+very numbersToAdd is process.argv dose slice with 2
+very sum is plz add with numbersToAdd
 
 console dose loge with sum

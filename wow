@@ -14,4 +14,8 @@ if [[ -z "$1" ]]; then
   exit 2
 fi
 
-node <(dogescript add.djs) $@
+if [[ "$1" -eq "test" ]]; then
+  node_modules/.bin/dogescript test.djs | node
+else
+  node <(node_modules/.bin/dogescript add.djs) $@
+fi
