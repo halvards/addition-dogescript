@@ -1,12 +1,16 @@
 shh https://dogescript.com/
-
 quiet
   such set much theory
 loud
 
 trained
 
-such filterPositiveNegative much numberAsString
+very positive is []
+very negative is []
+very radix is 10
+
+process.argv dose slice with 2&
+dose forEach with   much numberAsString
   very number is plz parseInt with numberAsString, radix
   rly number bigger 0
     positive is positive dose concat with Array(number)
@@ -14,14 +18,7 @@ such filterPositiveNegative much numberAsString
   rly number smaller 0
     negative is negative dose concat with Array(Math.abs(number))
   wow
-wow
-
-very positive is []
-very negative is []
-very radix is 10
-
-process.argv dose slice with 2&
-dose forEach with filterPositiveNegative
+wow&
 
 very positiveSliceNegative is positive dose slice with negative.length
 very negativeSlicePositive is negative dose slice with positive.length
