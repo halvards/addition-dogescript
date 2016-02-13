@@ -30,7 +30,7 @@ such add with numbers
   wow
 wow result
 
-module.export is add
+module.exports is add
 
 very numbers is process.argv dose slice with 2
 very sum is plz add with numbers
